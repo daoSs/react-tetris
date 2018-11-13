@@ -6,7 +6,6 @@ import propTypes from 'prop-types';
 import style from './index.less';
 
 import Matrix from '../components/matrix';
-import Decorate from '../components/decorate';
 import Number from '../components/number';
 import Next from '../components/next';
 import Music from '../components/music';
@@ -75,7 +74,7 @@ class App extends React.Component {
         css = {
           paddingTop: Math.floor(filling) + 42,
           paddingBottom: Math.floor(filling),
-          marginTop: Math.floor(-480 - (filling * 1.5)),
+          marginTop: Math.floor(-595 - (filling * 1.5)),
         };
       }
       css[transform] = `scale(${scale})`;
@@ -88,7 +87,7 @@ class App extends React.Component {
         style={size}
       >
         <div className={classnames({ [style.rect]: true, [style.drop]: this.props.drop })}>
-          <Decorate />
+          {/* <Decorate /> */}
           <div className={style.screen}>
             <div className={style.panel}>
               <Matrix
